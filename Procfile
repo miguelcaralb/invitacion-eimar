@@ -1,0 +1,1 @@
+gunicorn invitacion_eimar.wsgi:application

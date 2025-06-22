@@ -1,0 +1,95 @@
+<!-- cumple/templates/cumple/invitacion.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¡Estás invitado al cumple de Eimar!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom, #ffcc00, #ff6600);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background-color: #ff3300;
+      border-radius: 20px;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    .dino {
+      font-size: 4em;
+    }
+    .btn {
+      display: block;
+      background-color: #ffff66;
+      color: #cc0000;
+      padding: 15px;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 300px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #ffeb3b;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="dino">
+      🦖🦕
+    </div>
+    <h1>¡Estás invitado al cumple de Eimar!</h1>
+    <p>Ven a rugir de la risa con nosotros en una fiesta jurásica inolvidable.</p>
+    <hr style="margin: 30px 0; border: 2px dashed #fff;">
+    <h2>¿Cuándo será?</h2>
+    <p>12 de julio de 2025 a las 19:00 hrs</p>
+    
+    <img src="/static/img/calendario-12julio.png" alt="Calendario julio 2025" style="max-width: 100%; border-radius: 12px; margin-top: 15px;">
+    <hr style="margin: 30px 0; border: 2px dashed #fff;">
+    <h2>¿Cómo llegar?</h2>
+    <p><strong>📍 Ubicación:</strong> Venta Campano</p>
+    <a class="btn" href="https://maps.app.goo.gl/ucm4neEx6PzhcqYf8" target="_blank">
+    🗺️ Abrir en Google Maps
+    </a>
+    <p>Debéis llegar hasta la <strong>Venta Campano</strong>. Justo después, veréis un cartel de <strong>Salesianos</strong>:<br>eso indica la entrada al carril que os llevará hasta <strong>Bosque Escuela</strong> 😊</p>
+    <img src="{% static 'img/indicacion_bosque.jpg' %}" alt="Indicación Bosque Escuela" style="max-width: 100%; border-radius: 12px; margin-top: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+    <hr style="margin: 30px 0; border: 2px dashed #fff;">
+    <h2>¿Qué haremos?</h2>
+
+    <p>¡Aunque los dinosaurios nos acompañan en el diseño, la aventura real será otra!<br><br>
+Prepárate para una tarde llena de <strong>juegos de mesa gigantes</strong>, <strong>realidad virtual</strong> y un emocionante <strong>scape room científico</strong> donde pondremos a prueba nuestra lógica y trabajo en equipo.<br><br>
+¡Será una experiencia inolvidable para Eimar y todos sus amigos!</p>
+
+    <hr style="margin: 30px 0; border: 2px dashed #fff;">
+    
+    <h2>Regalo conjunto 🎁</h2>
+    <p>Si deseas colaborar con un regalo conjunto para Eimar, puedes hacer una aportación de <strong>10 €</strong> vía Bizum al siguiente número:</p>
+    <p style="font-size: 1.5em; font-weight: bold;">📱 +34 622 077 899</p>
+    <p>¡Gracias por formar parte de este día tan especial!</p>
+    <hr style="margin: 30px 0; border: 2px dashed #fff;">
+
+    <h2>Confirma tu asistencia aqui:</h2>
+    <a class="btn" href="https://wa.me/34622077899?text=Confirmo%20mi%20asistencia%20al%20cumplea%C3%B1os%20de%20Eimar%20%F0%9F%A4%9C" target="_blank">
+     ✉️ Confirmar asistencia
+    </a>
+        <hr style="margin: 30px 0; border: 2px dashed #fff;">
+
+    <p>¡No faltes, será una aventura prehistórica!</p>
+  </div>
+</body>
+</html>
